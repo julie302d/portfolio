@@ -1,6 +1,8 @@
 /*Mobil-first*/
 
-/*
+body {
+    background-color: white;
+}
 
 p {
     font-family: 'Lato', sans-serif;
@@ -9,15 +11,8 @@ p {
     line-height: normal;
 }
 
+/*Splash farver*/
 
-*/
-
-
-/*Grundelementer*/
-/*
-body {
-    background-color: white;
-}
 #splash{
     background-color: #E1CAB7;
 }
@@ -40,14 +35,7 @@ body {
     background-color: #253E41;
 }
 
-*/
-
-
-/*Forside/om mig*/
-
-/*
-
-
+/*Overskrifter*/
 
 h1 {
    font-family: 'Playfair Display', serif;
@@ -96,15 +84,7 @@ a:hover {
 img {
     width: 100%;
 }
-*/
-/*
-nav a {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    color: #13F1FC;
-}
-*/
-/*
+
 section {
     max-width: 1200px;
     margin: auto;
@@ -126,9 +106,8 @@ a:active {
 */
 
 
-/*Index.html*/
 
-/*
+
 img {
     width: 100%;
 }
@@ -327,16 +306,9 @@ nav a {
         grid-row-start: 3;
         grid-row-end: 5;
     }
-*/
-
-/*  Forside/om mig  */
 
 
 
-
-/*Splash*/
-
-/*
 body {
     margin: 0;
 }
@@ -411,12 +383,7 @@ body {
     font-size: 4rem;
     text-align: center;
 }
-#splash_overskrift2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    text-align: center;
-}
-    }
+
 nav {
     color: #E1CAB7;
     font-weight: 800;
@@ -436,10 +403,8 @@ a:visited {
 a:hover {
     color: pink;
 }
-*/
 
 /*Computer*/
-/*
 @media (min-width: 600px) {
 
     #splash {
@@ -451,16 +416,10 @@ a:hover {
         font-size: 8rem;
         text-align: center;
     }
-    #splash_overskrift2 {
-        font-family: 'Playfair Display', serif;
-        font-size: 8rem;
-        text-align: center;
-    }
     #splash div {
         grid-column: 3/4;
         grid-row: 3/4;
         text-align: center;
     }
 }
-*/
 
