@@ -212,8 +212,35 @@ a.button{
 #i7:checked ~ .nav #dot7,
 #i8:checked ~ .nav #dot8 {
     background: #ec9bff;
-    ;
 }
+
+#i1,
+#i2,
+#i3,
+#i4,
+#i5,
+#i6 {
+    display: none;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six {
+    z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5,
+#i6:checked ~ .nav #dot6{
+    background: #ec9bff;
+}
+
 
 /*OVERSKRIFTER GENEREL STYLING*/
 h1 {
