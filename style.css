@@ -15,7 +15,6 @@ body {
 img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
 }
 
 video {
@@ -27,78 +26,81 @@ section {
     margin: 2rem 0;
 }
 
+nav {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+    text-align: right;
+}
 
 .container {
-    max-width: 1640px;
-    margin: 0 auto;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 2rem 1rem 5rem 1rem;
 }
-.image{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
+
+
+#logo {
+    width: 6rem;
 }
-.image1{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
-}
-.image2{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
-}
-.image3{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
-}
-.image4{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
-}
-.image5{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
-}
-.image6{
-    background-color: #f0e4da;
-    padding: 15px 0 0 15px;
-}
-.colors {
+.center{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: auto;
-    padding-top: 5rem;
+    justify-content: center;
 }
-.colorbox {
-    padding: 0px;
-    border-radius: 100px;
-    border-radius: 100px;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
-    margin: auto;
+
+a.button{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.1);
+    margin: 1rem 0;
 }
-.color_1 {
-    background-color: #CBBFB6;
+
+
+
+
+.image {
+    background-color: #CBBFB5;
+    padding: 15px 0 0 15px;
 }
-.color_2 {
+
+.image1 {
     background-color: #E2CCCD;
+    padding: 15px 0 0 15px;
 }
-.color_3 {
+
+.image2 {
     background-color: #E2D6CB;
+    padding: 15px 0 0 15px;
 }
-.color_4 {
+
+.image3 {
     background-color: #BCC9BF;
+    padding: 15px 0 0 15px;
 }
-.color_5 {
+
+.image4 {
     background-color: #D3C8B9;
+    padding: 15px 0 0 15px;
 }
-.color_6 {
+
+.image5 {
     background-color: #D8B9A1;
+    padding: 15px 0 0 15px;
 }
-.color_7 {
+
+.image6 {
     background-color: #A8A5A1;
+    padding: 15px 0 0 15px;
 }
+
 
 /*SLIDER*/
-.container {
+.container_ {
     margin: 0 auto;
     margin-top: 20px;
     position: relative;
@@ -240,11 +242,6 @@ h4 {
     color: #253E41;
     text-align: left;
 }
-/*
-.dotted{
-    border-bottom: 5px dotted;
-}
-*/
 
 p {
     font-family: 'Lato', sans-serif;
@@ -254,6 +251,16 @@ p {
     line-height: normal;
 }
 
+.pitch{
+    background-color: #BCC9BF;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    margin: auto;
+    width: 60%;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -261,19 +268,18 @@ img {
 
 #burgermenu {
     background: none;
-    color: black;
+    color: #D3C8B9;
     border: none;
     padding: 0.5rem;
     margin-right: 0.5rem;
     width: 3rem;
     height: 3rem;
-    text-align: right;
-
+    margin-right: 0;
 }
 
 #menupunkter {
     position: relative;
-padding-top: 3rem;
+    padding-top: 3rem;
 }
 
 header {
@@ -284,11 +290,11 @@ header {
     width: 100%;
     font-family: 'Playfair Display';
     font-weight: 300;
-    text-align: right;
+/*    text-align: right;*/
 }
 
 nav a {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display';
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -315,17 +321,27 @@ nav a {
         flex-direction: column;
         padding: 1rem;
     }
+    a.online_button {
+		color: #000;
+		background: none;
+		padding: 1rem 0;
+	}
+
+	nav a {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 
     main {
         padding-top: 3rem;
     }
 
     a:link {
-        color: hotpink;
+        color: darkgrey;
     }
 
     a:visited {
-        color: rgba(255, 165, 0, 0.67);
+        color: #56635C;
     }
 
     a:active {
@@ -343,6 +359,7 @@ nav a {
     div .h3 {
         text-align: center;
     }
+
 }
 
 
@@ -353,25 +370,37 @@ nav a {
         display: none;
     }
 
-/*
-    nav {
-        min-height: 3vh;
+    #logo {
+        width: 4.5rem;
     }
-*/
-    header {
-    text-align: center;
-    padding-bottom: 2rem;
+
+    nav {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+    text-align: right;
 }
+
+	nav a {
+		margin-left: 2rem;
+	}
+
+    header .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1rem 5rem 1rem;
+    }
 
     main {
         padding-top: 3rem;
     }
-     a:link {
-        color: hotpink;
+
+    a:link {
+        color: #D3C8B9;
     }
 
     a:visited {
-        color: rgba(255, 165, 0, 0.67);
+        color: #D3C8B9;
     }
 
     a:active {
@@ -382,13 +411,13 @@ nav a {
         color: rgba(235, 178, 222, 0.76);
     }
 
+
 }
 
 
+
+
 /*SPLASH FARVER*/
-
-
-
 
 #splash1 {
     background-color: #E2CCCD;
@@ -420,6 +449,7 @@ nav a {
 
 @media only screen and (min-width: 768px) {
 
+
     .image {
         grid-area: image;
     }
@@ -434,7 +464,16 @@ nav a {
         grid-template-columns: 2fr 1fr;
         column-gap: 10px;
         margin: auto;
-        width: 80%;
+        width: 70%;
+    }
+
+    .grid1-2_1 {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+        margin: auto;
+        width: 60%;
     }
     .grid1-2 {
         display: grid;
@@ -442,16 +481,18 @@ nav a {
         grid-template-columns: 1fr 2fr;
         column-gap: 10px;
         margin: auto;
-        width: 80%;
+        width: 70%;
     }
+
     .grid1-1 {
         display: grid;
         grid-gap: 2rem;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
         margin: auto;
-        width: 80%;
+        width: 70%;
     }
+
     .grid-1 {
         display: grid;
         grid-gap: 2rem;
@@ -460,22 +501,25 @@ nav a {
         margin: auto;
         width: 60%;
     }
+
     .grid3 {
         display: grid;
         grid-gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
         margin: auto;
-        width: 80%;
+        width: 70%;
     }
-
 }
 
 
 /*COMPUTER*/
 
-
 @media (min-width: 600px) {
+
+    #menupunkter {
+        padding-top: 2rem;
+    }
 
     #splash {
         width: 100vw;
